@@ -11,7 +11,7 @@ from keras.layers import Conv2D, MaxPooling2D, concatenate, Input
 from keras.losses import mean_squared_error
 from keras import backend as K
 
-def deep_vl_model_v1(size_val):
+def deep_vl_rv_model(size_val):
     input_shape = (size_val, size_val, 1)
     model = Sequential()
     model.add(Conv2D(32, kernel_size=(9, 9),
